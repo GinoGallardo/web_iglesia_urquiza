@@ -1,0 +1,393 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+/*HEADER BARRA MENU*/
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .5);
+}
+.container__menu{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 0px 20px;
+    text-align: right;
+    align-content: top right;
+}
+.menu{
+    max-width: 1200px;
+    height: 100%;
+    padding: 0px;
+    text-align: top right;
+    
+}
+.fa-solid {
+    float: left;
+}
+nav{
+    height: 100%;
+}
+nav > ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+    float: right;
+}
+
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .0.3);
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300m ease;
+}
+nav > ul > li > a:hover{
+    color: #fafafa;
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+#selected{
+    transform: scale(1.1);
+    background-color: rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+}
+/*SUBMENU*/
+nav ul li ul{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, .01);
+    position: absolute;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+nav ul li:hover ul{
+    background-color: rgba(0, 0, 0, .5);
+    visibility: visible;
+    opacity: 1;
+    top: 45px;
+}
+nav ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid rgba(0, 0, 0, .1);
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, .5);
+}
+nav ul li ul li a{
+    display: block;
+    color: #fafafa;
+    padding: 6px;
+    padding-left: 14px;
+    margin-top: 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: all 300ms ease;
+}
+nav ul li ul li a:hover{
+    background-color: rgba(0, 0, 0, .5);
+    color: #fafafa;
+    transform: scale(1.1);
+    padding-left: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.50);
+}
+/*MAIN CONTENIDO*/
+.div__img{
+    color: rgba(231, 225, 225, .2);
+    background-image: url(../img/DSC_0702\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, .7);
+    background-blend-mode: soft-light;
+    position: relative;
+    width: 100%;
+    height: 950px;
+}
+
+.div__img  h1{
+    font-size: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    position: relative;
+    top: 40%;
+    left: 0%;
+
+}
+
+.div__ot{
+    width: 100%;
+    height: 100%;
+    background: #e2dbdb;
+    padding: 40px 20px;
+    margin-top: 0px;
+    display: flex;
+}
+.tema__oracion{
+    width: 40%;
+    height: 100%;
+    padding: 10px 15px;
+    margin: 0 auto;
+    background-image: url(../img/oramos_por_vos.jpg);
+    background-size: 750px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: soft-light;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid #0099e9;
+}
+.tema__testimonio{
+    width: 40%;
+    height: 100%;
+    padding: 10px 0px;
+    margin: 0px auto;
+    background-image: url(../img/dejanos_testimonio.jpg);
+    background-size: 750px 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, .5);
+    background-blend-mode: soft-light;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid #0099e9;
+}
+.div__ot h2{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px 0px 15px;
+}
+.div__ot p{
+    color: #fff;
+    font-size: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px 30px 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div__ot a{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #0099e9;
+    border-radius: 15px;
+}
+.div__ot a:hover{
+    color: #0099e9;
+    background: #fff;
+    margin-bottom: 6px;
+    border: 2px solid #0099e9;
+    transition: all 300ms ease;
+}
+.div__nosotros{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #0099e9;
+    background: #e2dbdb;
+    padding: 60px 0px;
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.div__nosotros div{
+    width: 30%;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+    justify-content: center center;
+    flex-wrap: wrap;
+}
+.div__nosotros h2{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom: 20px;
+}
+.div__nosotros p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
+    display: block;
+}
+.div__nosotros video{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+/*ELEMENTOS RESPONSIVOS*/
+.icon__menu{
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+#check__menu{
+    display: none;
+}
+@media screen and (max-width: 720px){
+    .search input{
+        display: none;
+    }
+    .header__superior{
+        padding: 10px;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .logo h1{
+        font-size: 14px;
+    }
+    nav > ul{
+        flex-direction: column;
+        background-color: #023877;
+        position: fixed;
+        left: 0;
+        top: 220px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+    nav ul li ul{
+        left: 90px;
+    }
+    nav > ul > li:hover ul{
+        top: 50px;
+    }
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+    #selected{
+        transform: scale(1);
+    }
+    #label__check{
+        display: block;
+    }
+    .icon__menu{
+        display: flex;
+        color: white;
+    }
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+   .main__img{
+    width: 100%;
+    background: #e2dbdb;
+    padding: 30px 0px;
+    margin-top: 100px;
+   }
+   .main__img img{
+        width: 100%;
+   }
+   .main__img h1{
+    width: 100%;
+    font-size: 20PX;
+   }
+   .main__img P{
+    font-size: 14px;
+   }
+
+    .main__ot{
+        width: 100%;
+        background: #e2dbdb;
+        padding: 40px 20px;
+        margin-top: 0px;
+    }
+    .temas__hermanos{
+        width: 80%;
+        max-width: 1200px;
+        margin: 20px auto ;
+        padding: 20px;
+        background: #fff; 
+        border-radius: 10px;
+    }
+    .temas__hermanos h1{
+        font-size: 24px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        padding: 15px;
+    }
+    .temas__hermanos p{
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding: 0px 15px 10px;
+    }
+    .temas__hermanos a{
+        color: #fff;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        padding: 5px 15px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        background: #0099e9;
+        border-radius: 15px;
+    }
+}
