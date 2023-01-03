@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Roboto+Slab:wght@100;200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body{
+    font-family: $font-h2;
+    background-image: linear-gradient(
+        to bottom right,
+        #f32e9ab4 0%,
+        #f969cc 20%,
+        #ffa3fe 40%,
+        #fe70988f 60%,
+        #f973d3c0 80%,
+    );
+    background-size: 200% 200%;
+    animation: movimiento 5s linear infinite alternate;
+}
+@keyframes movimiento{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: 100% 100%;
+    }
+}

@@ -1,0 +1,17 @@
+@import "./utilidades/variables";
+@import "./utilidades/mixin";
+
+@import "./base/reset";
+
+@import "./component/whatsapp";
+@import "./component/botones";
+@import "./component/navbar;
+@import "./component/footer";
+@import "./component/tarjetas";
+
+@import "./pages/index";
+@import "./pages/productos";
+@import "./pages/quienessomos";
+@import "./pages/servicios";
+@import "./pages/turnos";
+

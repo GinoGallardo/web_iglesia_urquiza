@@ -1,0 +1,14 @@
+.sec_mision{
+    @include seccion_page;
+    &:hover{
+        background-color: $color-fondosech;
+    }
+  }
+  
+  /*-----SECCION-VISION-----*/
+  .sec_vision{
+    @include seccion_page;
+    &:hover{
+        background-color: $color-fondosech;
+    }
+  }

@@ -1,0 +1,63 @@
+.sec_servicio-lavado{
+  @include seccion_page();
+    &:hover{
+    background-color: $color-fondosech;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .4);
+  }
+  }
+  
+  .sec_servicio-corte{
+    @include seccion_page;
+    &:hover{
+    background-color: $color-fondosech;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .4);
+  }
+  }
+  
+  .sec_servicio-peinado{
+    @include seccion_page;
+    &:hover{
+    background-color: $color-fondosech;
+    box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .4);
+    }
+  }
+  
+  .sec_servicio-tratamientos{
+    @include seccion_page;
+    &:hover{
+      background-color: $color-fondosech;
+      box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .4);
+    }
+  }
+   
+  .sec_servicio-color{
+    @include seccion_page;
+    &:hover{
+      background-color: $color-fondosech;
+      box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .4);
+    }
+  }
+  
+  .sec_servicio-alizado{
+    @include seccion_page;
+    &:hover{
+      background-color: $color-fondosech;
+      box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, .4);
+    }
+  }
+
+  .borde_izquierdo{
+    @include borde_izquierdo;
+  }
+
+  .borde_derecho{
+    @include borde_derecho;
+  }
+
+  .frase_corte-cabello{
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Unbounded', cursive;
+    font-size: 7rem;
+    letter-spacing: 3;
+  }

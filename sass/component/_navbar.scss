@@ -1,0 +1,35 @@
+header {
+  background-color: $color-secundario;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  .h1ee {
+    display: none;
+  }
+  .navheader {
+    display: flex;
+    padding: 10px;
+    ul a{
+      font-family: "Montserrat", sans-serif;
+      color: $color-fff;
+      margin: 0em 0.5em;
+      padding: 5px 10px;
+      transition: all 0.5s;
+      text-transform: uppercase;
+      &:hover {
+        border-radius: 0.2em;
+        background-color: $color-fondosec;
+        border-bottom: 0.1em solid $color-fff;
+        padding: 0em 0.2em;
+      }
+    }
+  }
+}
+.navheader_logo {
+  width: 50px;
+}
+
+.color-iconbar {
+  background-color: $color-fff;
+}
+

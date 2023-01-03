@@ -6,72 +6,96 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Inicio</title>
     <script src="https://kit.fontawesome.com/c50a312c0b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/estilo_inicio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="icon" href="../img/logo iglesia sin techo - transparente (2).png">
 </head>
 <body>
-    <header class="header">
-        <nav>
-            <input type="checkbox" id="check__menu">
-            <label id="#label__check" for="check__menu">
-            <i class="fa-solid fa-bars icon__menu"></i>
-            </label>
-            <ul>
-                <li><a href="#" id="selected"></a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Actividades</a>
-                    <ul>
-                        <li><a href="#">Estudio de la Biblía</a></li>
-                        <li><a href="#">Cena del Señor</a></li>
-                        <li><a href="#">Actividades de los Sabados</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Ministerios</a>
-                    <ul>
-                        <li><a href="#">Adolescentes</a></li>
-                        <li><a href="#">Jovenes</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Galeria</a>
-                    <ul>
-                        <li><a href="#">Fotos</a></li>
-                        <li><a href="#">Videos</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Contacto</a></li>
+    <header class="navbar navbar-expand-lg navbar-style">
+        <div class="container navheader">
+          <a href="./index.html">
+            <img
+              class="navheader_logo"
+              src="./img/logo iglesia sin techo - transparente (blanco).png"
+              alt="Logo estilo escorpiano"
+            />
+          </a>
+          <h1 class="navbar_h1 d-none d-lg-flex">Iglesia de Urquiza</h1>
+          <button
+            class="navbar-toggler color-iconbar"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon color-iconbar"></span>
+          </button>
+          <nav
+            class="navheader_nav nav collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li><a class="nav-link navbar-a activo-ul" href="./index.html">Inicio</a></li>
+              <li><a class="nav-link navbar-a" href="#">Ministerio</a>
+                <ul class="navbar-submenu" >
+                  <li><a class="navbar-suba" href="#">Jovenes</a></li>
+                  <li><a class="navbar-suba" href="#">Adolescentes</a></li>
+                  <li><a class="navbar-suba" href="#">Escuelita Bilica</a></li>
+                  <li><a class="navbar-suba" href="#">Musica</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link navbar-a" href="#">Servicios</a></li>
+              <li><a class="nav-link navbar-a" href="#">Actividades</a>
+                <ul class="navbar-submenu" >
+                  <li><a class="navbar-suba" href="#">Estudio de La Biblia</a></li>
+                  <li><a class="navbar-suba" href="#">Cena del Señor</a></li>
+                  <li><a class="navbar-suba" href="#">Evangelización</a></li>
+                  <li><a class="navbar-suba" href="#">Actividades de los Sabados</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link navbar-a" href="./paginas/turnos.html">Galeria</a></li>
             </ul>
-        </nav>
-            </div>
+          </nav>
         </div>
-    </header>
-    <main>
-        <div class="div__img">
-            <h1>IGLESIA DE URQUIZA</h1>
-        </div>
-    <div class="div__ot">
-        <div class="tema__oracion">
-            <h2>¿Tenés un tema de Oracón?</h2>
-            <p>Comparte con nosotros tu necesidad,<br>
+      </header>
+  <main>
+    <section>
+      <div class="container-fluit">
+        <img src="./img/foto_portada.png" class="col-12 img-flut" alt="hermanos de la iglesia urquiza">
+      </div>
+    </section>
+    <section>
+      <div class="container mt-2 mb-2">
+        <video controls class="col-12" >
+          <source src="./video/iglesia de urquiza.mp4" type="video/mp4" class="col-12 autoplay controls" >
+        </video>
+      </div>
+    </section>
+    <section>
+      <div class="container d-flex justify-content-center">
+        <div class="row col-12 d-flex justify-content-center">
+          <div class="oracion_testimonio text-center col-12 col-md-5">
+            <h2 class="text-center" >¿Tenés un tema de Oracón?</h2>
+            <p class="text-center">Comparte con nosotros tu necesidad,<br>
                 estaremos orando por vos.</p>
-            <a href="#">Dejanos tu TEMA DE ORACIÓN</a>
+            <a class="enlace_temtes" href="#">Dejar Oración</a>
         </div>
-        <div class="tema__testimonio">
+        <div class="oracion_testimonio text-center col-12 col-md-5">
             <h2>Contanos tu TESTIMONIO</h2>
             <p>Comparte con nosotros como DIOS,<br>
                 cambió tu vida.</p>
-            <a href="#">Comparte con nosotros tu TESTIMONIO</a>
+            <a class="enlace_temtes" href="#">dejar testimonio</a>
         </div>
-    </div>
-    <div class="div__nosotros">
-        <div>
-            <h1>NOSOTROS ESTAMOS PARA</h1>
-            <p>LA <b>GLORIA</b> DE DIOS</p><br>
-            <p>LA <b>SALVACIÓN</b> DE LAS ALMAS</p><br>
-            <p>LA <b>EDIFICACIÓN</b> DEL CUERPO DE CRISTO</p><br>
         </div>
-        <div>
-            <video src="../video/Qué es la Iglesia para vos.mp4" loop autoplay muted playsinline controls></video>    
-        </div>
-    </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+
+  </footer>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
