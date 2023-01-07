@@ -151,3 +151,91 @@ ul{
 .icon-redes{
     color: #fff;
 }
+
+
+/* -----ESCUELITA-BÍBLICA----- */
+.fondo_portada{
+    text-transform: uppercase;
+    font-family: cursive;
+    background-image: url(../img/fondo-portada-esculita-biblica.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.tarjeta {
+    position: relative;
+    width: 310px;
+    height: 350px;
+    margin: 20px;
+}
+
+.tarjeta .lado {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.tarjeta .frontal {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+
+.tarjeta .frontal img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta .frontal h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.tarjeta .reversa {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: .3em;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+
+.tarjeta .reversa h3 {
+    font-size: 1.1em;
+    margin-top: .2em;
+    letter-spacing: 1px;
+}
+
+.tarjeta .reversa p {
+    font-size: 1em;
+    margin: 0;
+} 
+/* .enlace_tarjeta-escuelita{
+    border-top: solid 1px #f3f3f3;
+    line-height: 50px;
+} */
+.enlace_tarjeta-escuelita a{
+    color: #f3f3f3;
+}
+
+.tarjeta:hover .frontal {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.tarjeta:hover .reversa {
+    transform: perspective(600px) rotateY(360deg);
+}
