@@ -196,6 +196,7 @@ ul{
     position: absolute;
     bottom: 0;
     width: 100%;
+    font-size: 1.2em;
     text-transform: uppercase;
     height: 45px;
     line-height: 45px;
@@ -239,4 +240,10 @@ ul{
 
 .tarjeta:hover .reversa {
     transform: perspective(600px) rotateY(360deg);
+}
+
+/* ---ADOLESCENTES--- */
+.portada_adolescente{
+    width: 100%;
+    background-image: linear-gradient(rgb(236, 134, 39), rgb(177, 233, 45));
 }
