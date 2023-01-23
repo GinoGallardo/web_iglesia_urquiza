@@ -276,7 +276,6 @@ ul{
     background-color: #f3f3f3;
 }
 .contenedor_tarjeta{
-    max-width: 1200px;
     margin: auto;
     margin-top: 2em;
     display: flex;
@@ -336,4 +335,68 @@ ul{
     font-family: 'Courier New', Courier, monospace;
     border: 0;
 }
+.objetivo{
+    border-radius: 2em;
+    margin: 2em auto;
+    background-color: #f3f3f3;
+    box-shadow: rgba(0, 0, 0, .7);
+}
+.objetivo_titulo h2{
+    margin-top: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.objetivo_texto{
+    align-items: center;
+}
+.objetivo_texto p{
+    margin-top: 1em;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.objetivo_texto-img img{
+    margin: 1em auto;
+}
+.mision{
+    border-radius: 2em;
+    margin: 2em auto;
+    background-color: #f3f3f3;
+    box-shadow: rgba(0, 0, 0, .7);
+}
+.mision_titulo h2{
+    margin-top: 1em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.mision_texto{
+    align-items: center;
+}
+.mision_texto p{
+    margin-top: 1em;
+    font-size: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.mision_texto-img{
+    margin: 1em auto;
+}
+.redes_adolescentes{
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+.icon-redes_adolescente{
+    color: #000;
+    font-size: 3em;
+}
+
+/* -----JOVENES------ */
+.portada_jovenes{
+    background-color: #000;
+}
+
+/* -----ESTUDIO DE LA BIBLIA----- */
 
