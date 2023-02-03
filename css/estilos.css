@@ -400,3 +400,29 @@ ul{
 
 /* -----ESTUDIO DE LA BIBLIA----- */
 
+.portada_eb{
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+}
+.portada_eb-versiculo{
+    padding: .5em;
+    border: none;
+    box-shadow: 1em 1em 1em #000;
+}
+.texto_eb{
+    width: 80%;
+    margin: 2em auto;
+}
+.texto_eb-subtitulo{
+    font-size: 1.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+.texto_eb-contexto{
+    font-size: 1.2em;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
