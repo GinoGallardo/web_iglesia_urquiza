@@ -426,3 +426,20 @@ ul{
     text-align: justify;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+/*---ALABANZA---*/
+
+.cancionero{
+    background-color: #3a3939;
+    padding: 3em 0;
+}
+.pdf_alabanza{
+    width: 90%;
+    height: 100vh;
+    padding: 3em auto;
+    margin: auto;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2),
+                0 6px 20px 0 rgba(0, 0, 0, .2);
+}
+
