@@ -270,67 +270,6 @@ ul{
     font-family: 'Courier New', Courier, monospace;
 }
 
-/* -----TARJETA-LIDERES-ADOLESCENTE----- */
-.tar_lider{
-    border-radius: 2em;
-    background-color: #f3f3f3;
-}
-.contenedor_tarjeta{
-    margin: auto;
-    margin-top: 2em;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.tarjeta_lider{
-    width: 300px;
-    margin: 1em;
-    transition: all 2s;
-    border-radius: 2em;
-    box-shadow: rgba(0, 0, 0, .3);
-}
-.tarjeta_lider:hover{
-    width: 320px;
-    height: 300px;
-}
-.tarjeta_lider .cover img{
-    width: 150px;
-    display: block;
-    margin: auto;
-    position: relative;
-    top: 40px;
-    z-index: 1;
-    transition: all 3s;
-}
-.tarjeta_lider:hover .cover img{
-    top: 10px;
-}
-.tarjeta_lider .cover{
-    width: 100%;
-    height: 250px;
-    position: relative;
-    overflow: hidden;
-}
-.tarjeta_lider .img__back{
-    width: 100%;
-    height: 200px;
-    position: absolute;
-    bottom: -80px;
-    left: 0;
-    background-size: cover;
-}
-.tarjeta_lider:nth-of-type(1) .img__back{
-    background-image: url(../img/adolescentes/fondo_tarjeta.jpg);
-}
-.card .descripcion{
-    background-color: white;
-    margin-top: -1em;
-    padding: .8em;
-}
-.card .descripcion h2{
-    margin-top: 1em;
-    text-transform: uppercase;
-}
 .mision_lider{
     font-family: 'Courier New', Courier, monospace;
     border: 0;
@@ -428,6 +367,116 @@ ul{
 }
 
 /*---ALABANZA---*/
+span{
+    margin-top: .2em;
+    align-content: center;
+    display: flex;
+    justify-content: start;
+    font-size: 1.2em;
+}
+p{
+    margin-top: .5em;
+    font-size: 1em;
+    text-align: justify;
+    font-family: monospace;
+    background: #13101060;
+}
+.container_book, .book-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_book{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.book-content{
+    width: 62%;
+    min-width: 260px;
+    max-width: 500px;
+    height: 400px;
+    position: relative;
+    perspective: 100px;
+    transition: 1s; 
+}
+.book{
+    position: absolute;
+    width: 62%;
+    height: 100%;
+    background-image: url(../img/alabanza/portada_book.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s;
+    transform-style: preserve-3d;
+    transform-origin: left;
+}
+.fin_book{
+    position: absolute;
+    width: 62%;
+    height: 100%;
+    background-image: url(../img/alabanza/portada_book.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transition: 1s;
+    transform-style: preserve-3d;
+    transform-origin: left;
+}
+.face-front, .face-back{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-image: url(../img/alabanza/fondo_page_book.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 1em;
+    box-sizing: border-box;
+}
+.face-front{
+    box-shadow: inset 3px 0px 20px -7px black;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.face-back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateZ(-1px) rotateY(180deg);
+	box-shadow: inset -3px 1px 20px -7px black;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+#portada{
+	background: url('../img/bookPortada.jpg');
+}
+#portada-back{
+	background: url('../img/portadaBack.jpg');
+}
+#portada, #portada-back{
+	background-size: 100% 100%;
+}
+/* Clases que se agregaran con Javascript */
+
+.trnsf{
+	transform: translateX(80px);
+}
+.trnsf-reset{
+	transform: translateX(0px);
+}
+
+/* @media para hacer el texto responsivo */
+
+@media screen and (max-width: 800px){
+	p{
+		font-size: 12px;
+	}
+}
+
+
+
+
+
+
 
 .cancionero{
     background-color: #3a3939;
