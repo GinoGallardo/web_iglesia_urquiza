@@ -100,11 +100,14 @@ ul{
 /* ------FORMULARIO-SUSCRIBIR------ */
 
 .suscribir-index{
+    width: 100%;
     text-transform: uppercase;
     padding: 3em 0;
+    margin-left: 0;
     background-color: rgb(43, 42, 42);
 }
 .form-textindex{
+    width: 100%;
     color: #fff;
 }
 .style_input{
@@ -367,14 +370,14 @@ ul{
 }
 
 /*---ALABANZA---*/
-span{
+.book-content span{
     margin-top: .2em;
     align-content: center;
     display: flex;
     justify-content: start;
     font-size: 1.2em;
 }
-p{
+.book-content p{
     margin-top: .5em;
     font-size: 1em;
     text-align: justify;
@@ -467,7 +470,7 @@ p{
 /* @media para hacer el texto responsivo */
 
 @media screen and (max-width: 800px){
-	p{
+	.book-content p{
 		font-size: 12px;
 	}
 }

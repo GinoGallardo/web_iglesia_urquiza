@@ -1,20 +1,20 @@
-var front = document.querySelector('.face-front');
-var back = document.querySelector('.face-back');
-var flip = document.querySelector('.book-content');
-var uno = document.querySelectorAll('.book');
-var portada = document.querySelectorAll('#portada');
+front = document.querySelector('.face-front');
+back = document.querySelector('.face-back');
+flip = document.querySelector('.book-content');
+uno = document.querySelectorAll('.book');
+portada = document.querySelectorAll('#portada');
 
-var contZindex = 2;
-var customZindex = 1;
+contZindex = 2;
+customZindex = 1;
 
-for (var i = 0; i < uno.length; i++) {
+for (i = 0; i < uno.length; i++) {
 	uno[i].style.zIndex = customZindex;
 	customZindex--;
 
 	uno[i].addEventListener('click', function(e){
 
-		var tgt = e.target;
-		var unoThis = this;
+		tgt = e.target;
+		unoThis = this;
 
 		unoThis.style.zIndex = contZindex;
 		contZindex++;
@@ -46,3 +46,4 @@ for (var i = 0; i < uno.length; i++) {
 
 	});
 }
+pro
