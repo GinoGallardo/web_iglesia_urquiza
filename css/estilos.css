@@ -340,6 +340,25 @@ ul{
     background-color: #000;
 }
 
+.img_jovenes{
+    display: flex;
+    width: 600px;
+    height: 430px;
+}
+.img_jovenes img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+    transition: .5s ease;
+}
+.img_jovenes img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
 /* -----ESTUDIO DE LA BIBLIA----- */
 
 .portada_eb{
@@ -370,6 +389,16 @@ ul{
 }
 
 /*---ALABANZA---*/
+.pdf_alabanza{
+    margin: auto;
+    display: block;
+    width: 80%;
+    height: 80vh;
+    border-radius: .2em;
+    box-shadow: 0 .2em .8em 0 rgba(0, 0, 0, .2),
+                0 .3em 1em 0 rgba(0, 0, 0, .27);
+}
+
 .book-content span{
     margin-top: .2em;
     align-content: center;
@@ -382,7 +411,7 @@ ul{
     font-size: 1em;
     text-align: justify;
     font-family: monospace;
-    background: #13101060;
+    /* background: #13101060; */
 }
 .container_book, .book-content{
     display: flex;
@@ -393,6 +422,8 @@ ul{
     width: 100%;
     height: 100vh;
     background-color: #fff;
+    margin-top: 6em;
+    margin-bottom: 6em;
 }
 .book-content{
     width: 62%;
