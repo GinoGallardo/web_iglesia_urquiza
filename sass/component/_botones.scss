@@ -1,19 +1,19 @@
-.enlace_ser a{
-    margin: 2em auto;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: $color-fff;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: .2em;
-    border-radius: .3em;
-    cursor: pointer;
-    background-size: 300%;
-    background-image: linear-gradient(to left, #a950a1, #2d3a54, #a950a1);
-    text-decoration: none;
-    border: 3px solid rgba(100, 100, 100, 0.1);
-    transition: all ease 1s;
-    &:hover{
-        background-position: right;
-        border: 1px solid #fff;
-    }
-}
+// .enlace_ser a{
+//     margin: 2em auto;
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//     color: $color-fff;
+//     text-transform: uppercase;
+//     font-size: 1rem;
+//     padding: .2em;
+//     border-radius: .3em;
+//     cursor: pointer;
+//     background-size: 300%;
+//     background-image: linear-gradient(to left, #a950a1, #2d3a54, #a950a1);
+//     text-decoration: none;
+//     border: 3px solid rgba(100, 100, 100, 0.1);
+//     transition: all ease 1s;
+//     &:hover{
+//         background-position: right;
+//         border: 1px solid #fff;
+//     }
+// }

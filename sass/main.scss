@@ -5,13 +5,18 @@
 
 @import "./component/whatsapp";
 @import "./component/botones";
-@import "./component/navbar;
+@import "./component/navbar";
 @import "./component/footer";
-@import "./component/tarjetas";
+@import "./component/tarjetasVideo";
+@import "./component/formularioIndex.scss";
 
 @import "./pages/index";
-@import "./pages/productos";
-@import "./pages/quienessomos";
-@import "./pages/servicios";
-@import "./pages/turnos";
-
+@import "./pages/actividadSabados";
+@import "./pages/adolescentes";
+@import "./pages/alabanza";
+@import "./pages/cenadelSenor";
+@import "./pages/escuelaBiblica";
+@import "./pages/estudiodelaBiblia";
+@import "./pages/evangelizacion.scss";
+@import "./pages/galeria.scss";
+@import "./pages/jovenes.scss";

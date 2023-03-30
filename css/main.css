@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;900&family=Roboto+Slab:wght@100;200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  transition: all 2s ease;
+}
+
+.navbar-style {
+  display: flex;
+  padding: 10px;
+  background-color: black;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar-a {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin: 0em 0.3em;
+  padding: 5px 10px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  transition: all 1s ease;
+}
+
+.navbar-a:hover {
+  color: #fff;
+  border-radius: 0.2em;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-left: 0.1em solid #fff;
+  padding: 0em 0.2em;
+}
+
+.navbar-submenu {
+  display: none;
+  position: relative;
+  background-color: black;
+  transition: all 2s ease;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.navbar-suba {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  text-decoration: none;
+  margin: 0.1em 0;
+  padding: 5px 5px 5px 0;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+
+.navbar-suba:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.2em;
+  border-left: 0.1em solid #fff;
+  padding: 0em 0.5em;
+}
+
+.footer {
+  padding: 2em 0;
+  color: #fff;
+  background-color: black;
+}
+
+.footer h2 {
+  text-transform: uppercase;
+}
+
+.icon-redes {
+  color: #fff;
+}
+
+.tarjeta_video {
+  position: relative;
+  width: 290px;
+  height: 310px;
+  margin: 20px;
+}
+
+.tarjeta_video-video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.suscribir-index {
+  width: 100%;
+  text-transform: uppercase;
+  padding: 3em 0;
+  background-color: rgb(43, 42, 42);
+}
+
+.form-textindex {
+  width: 100%;
+  color: #fff;
+}
+
+.style_input {
+  padding: 0.2em 1em;
+  margin: 0.8em 0;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5em;
+  border-bottom: #fff solid 0.1em;
+}
+
+.style_input:hover {
+  padding: 0.2em 1em;
+  margin: 0.8em 0;
+  background: none;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5em;
+  border-bottom: rgb(92, 165, 224) solid 0.2em;
+  transition: all 0.3s ease;
+}
+
+.style_input-submit {
+  text-transform: uppercase;
+  padding: 0.3em 2em;
+  margin: 0.8em 0.8em;
+  border: none;
+  border-radius: 5em;
+}
+
+.style_input-submit:hover {
+  color: #fff;
+  background-color: rgb(43, 42, 42);
+  border: 0.2em solid #fff;
+}
+
+/*-----SEC-QUIENES SOMOS-----*/
+.oracion_testimonio {
+  padding: 0.3em;
+  margin: 1em;
+  text-transform: uppercase;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.enlace_temtes {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0 0.8em;
+  background-color: rgb(40, 122, 189);
+  border: none;
+  border-radius: 5em;
+}
+
+.enlace_temtes:hover {
+  color: rgb(40, 122, 189);
+  background-color: #fff;
+  border: solid 0.2em rgb(40, 122, 189);
+}
+
+.navbar_h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 0.5em;
+}
+
+.color-iconbar {
+  background-color: #fff;
+}
+
+.navheader_logo {
+  width: 2em;
+}
+
+.sec_prod {
+  width: 95%;
+  margin: 0.5em auto 0;
+}
+
+.con_secprod {
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10% auto 10%;
+  justify-content: center;
+  align-items: center;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  transition: all ease 1s;
+}
+.con_secprod:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.span_prod {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 0.3em;
+  margin: 1em auto;
+  background-color: #fff;
+  border: solid 1px;
+  box-shadow: 2px 2px 10px 5px black;
+}
+
+.contenedor_prod {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portada_adolescente {
+  width: 100%;
+  background-image: linear-gradient(rgb(236, 134, 39), rgb(177, 233, 45));
+}
+
+.portada_adolescente-texto {
+  padding: 1em;
+  margin: auto auto;
+  text-transform: uppercase;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.mision_lider {
+  font-family: "Courier New", Courier, monospace;
+  border: 0;
+}
+
+.objetivo {
+  border-radius: 2em;
+  margin: 2em auto;
+  background-color: #f3f3f3;
+  box-shadow: rgba(0, 0, 0, 0.7);
+}
+
+.objetivo_titulo h2 {
+  margin-top: 1em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.objetivo_texto {
+  align-items: center;
+}
+
+.objetivo_texto p {
+  margin-top: 1em;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.objetivo_texto-img img {
+  margin: 1em auto;
+}
+
+.mision {
+  border-radius: 2em;
+  margin: 2em auto;
+  background-color: #f3f3f3;
+  box-shadow: rgba(0, 0, 0, 0.7);
+}
+
+.mision_titulo h2 {
+  margin-top: 1em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.mision_texto {
+  align-items: center;
+}
+
+.mision_texto p {
+  margin-top: 1em;
+  font-size: 1em;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.mision_texto-img {
+  margin: 1em auto;
+}
+
+.redes_adolescentes {
+  font-size: 1.2em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+
+.icon-redes_adolescente {
+  color: #000;
+  font-size: 3em;
+}
+
+.pdf_alabanza {
+  margin: auto;
+  display: block;
+  width: 80%;
+  height: 80vh;
+  border-radius: 0.2em;
+  box-shadow: 0 0.2em 0.8em 0 rgba(0, 0, 0, 0.2), 0 0.3em 1em 0 rgba(0, 0, 0, 0.27);
+}
+
+.book-content span {
+  margin-top: 0.2em;
+  align-content: center;
+  display: flex;
+  justify-content: start;
+  font-size: 1.2em;
+}
+
+.book-content p {
+  margin-top: 0.5em;
+  font-size: 1em;
+  text-align: justify;
+  font-family: monospace;
+  /* background: #13101060; */
+}
+
+.container_book, .book-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_book {
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  margin-top: 6em;
+  margin-bottom: 6em;
+}
+
+.book-content {
+  width: 62%;
+  min-width: 260px;
+  max-width: 500px;
+  height: 400px;
+  position: relative;
+  perspective: 100px;
+  transition: 1s;
+}
+
+.book {
+  position: absolute;
+  width: 62%;
+  height: 100%;
+  background-image: url(../img/alabanza/portada_book.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 1s;
+  transform-style: preserve-3d;
+  transform-origin: left;
+}
+
+.fin_book {
+  position: absolute;
+  width: 62%;
+  height: 100%;
+  background-image: url(../img/alabanza/portada_book.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  transition: 1s;
+  transform-style: preserve-3d;
+  transform-origin: left;
+}
+
+.face-front, .face-back {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-image: url(../img/alabanza/fondo_page_book.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+.face-front {
+  box-shadow: inset 3px 0px 20px -7px black;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.face-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateZ(-1px) rotateY(180deg);
+  box-shadow: inset -3px 1px 20px -7px black;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+#portada {
+  background: url("../img/bookPortada.jpg");
+}
+
+#portada-back {
+  background: url("../img/portadaBack.jpg");
+}
+
+#portada, #portada-back {
+  background-size: 100% 100%;
+}
+
+/* Clases que se agregaran con Javascript */
+.trnsf {
+  transform: translateX(80px);
+}
+
+.trnsf-reset {
+  transform: translateX(0px);
+}
+
+/* @media para hacer el texto responsivo */
+@media screen and (max-width: 800px) {
+  .book-content p {
+    font-size: 12px;
+  }
+}
+.formturno {
+  width: 80%;
+  margin-top: 40px;
+  margin: 3em auto;
+  padding: 3em;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.2);
+  transition: all ease 1s;
+}
+.formturno:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 2px 2px 10px 5px rgba(0, 0, 0, 0.4);
+}
+.formturno_h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.fondo_portada {
+  width: 100%;
+  text-transform: uppercase;
+  font-family: cursive;
+  overflow: hidden;
+}
+
+.tarjeta {
+  position: relative;
+  width: 290px;
+  height: 310px;
+  margin: 20px;
+}
+
+.tarjeta .lado {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.7s;
+}
+
+.tarjeta .frontal {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.tarjeta .frontal img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+.tarjeta .frontal h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.tarjeta .reversa {
+  transform: perspective(600px) rotateY(180deg);
+  background-image: linear-gradient(rgb(88, 176, 226), rgb(159, 88, 226));
+  padding: 0.3em;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.tarjeta .reversa h3 {
+  font-size: 1.3em;
+  margin-top: 0.2em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.tarjeta .reversa p {
+  font-size: 1em;
+}
+
+.enlace_tarjeta-escuelita {
+  border-top: solid 1px #f3f3f3;
+}
+
+.enlace_tarjeta-escuelita a {
+  color: #f3f3f3;
+}
+
+.tarjeta:hover .frontal {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.tarjeta:hover .reversa {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.portada_eb {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.portada_eb-versiculo {
+  padding: 0.5em;
+  border: none;
+  box-shadow: 1em 1em 1em #000;
+}
+
+.texto_eb {
+  width: 80%;
+  margin: 2em auto;
+}
+
+.texto_eb-subtitulo {
+  font-size: 1.5em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1em;
+}
+
+.texto_eb-contexto {
+  font-size: 1.2em;
+  text-align: justify;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.portada_jovenes {
+  background-color: #000;
+}
+
+.img_jovenes {
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+
+.img_jovenes img {
+  width: 0px;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 8;
+  transition: 0.5s ease;
+}
+
+.img_jovenes img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}/*# sourceMappingURL=main.css.map */

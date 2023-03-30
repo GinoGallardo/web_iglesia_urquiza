@@ -1,37 +1,11 @@
-.footer {
-  width: 100%;
-  color: $color-fff;
-  background-color: $color-secundario;
-  margin-top: 1em;
+.footer{
+  padding: 2em 0;
+  color: #fff;
+  background-color: black;
 }
-
-/*----COLUMNA-PRODUCTO-----*/
-.h2-footer {
-  color: $color-fff;
-  text-decoration: none;
-  &:hover{
-    color: $color-fff;
-  }
+.footer h2{
+  text-transform: uppercase;
 }
-/*----COLUMNA-REDES-FOOTER-----*/
-.span-icon {
-  color: $color-fff;
-}
-.icon-w {
-  color: $color-fff;
-}
-.icon-f {
-  color: $color-fff;
-}
-.icon-y {
-  color: $color-fff;
-}
-.icon-i {
-  color: $color-fff;
-}
-.span-icon {
-  color: $color-fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1rem;
-  margin-left: 1em;
+.icon-redes{
+  color: #fff;
 }

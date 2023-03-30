@@ -1,35 +1,50 @@
-header {
-  background-color: $color-secundario;
+.navbar-style{
+  display: flex;
+  padding: 10px;
+  background-color: black;
   position: sticky;
   top: 0;
   z-index: 1;
-  .h1ee {
-    display: none;
-  }
-  .navheader {
-    display: flex;
-    padding: 10px;
-    ul a{
-      font-family: "Montserrat", sans-serif;
-      color: $color-fff;
-      margin: 0em 0.5em;
-      padding: 5px 10px;
-      transition: all 0.5s;
-      text-transform: uppercase;
-      &:hover {
-        border-radius: 0.2em;
-        background-color: $color-fondosec;
-        border-bottom: 0.1em solid $color-fff;
-        padding: 0em 0.2em;
-      }
-    }
-  }
 }
-.navheader_logo {
-  width: 50px;
+.navbar-a{
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin: 0em 0.3em;
+  padding: 5px 10px;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  transition: all 1s ease;
 }
-
-.color-iconbar {
-  background-color: $color-fff;
+.navbar-a:hover {
+  color: #fff;
+  border-radius: 0.2em;
+  background-color:rgba(255, 255, 255, 0.30);
+  border-left: 0.1em solid #fff;
+  padding: 0em 0.2em;
 }
-
+.navbar-submenu{
+  display: none;
+  position: relative;
+  background-color: black;
+  transition: all 2s ease;
+}
+.nav li:hover > ul{
+  display: block;
+}
+.navbar-suba{
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: .9rem;
+  text-decoration: none;
+  margin: 0.1em 0;
+  padding: 5px 5px 5px 0;
+  transition: all 0.5s;
+  text-transform: uppercase;
+}
+.navbar-suba:hover{
+  color: #fff;
+  background-color:rgba(255, 255, 255, 0.30);
+  border-radius: 0.2em;
+  border-left: 0.1em solid #fff;
+  padding: 0em 0.5em;
+}
